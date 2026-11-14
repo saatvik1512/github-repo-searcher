@@ -11,6 +11,17 @@ stores results in PostgreSQL with efficient upsert logic, and provides filtered 
 - ✅ Unit + integration tests (TDD approach)
 - ✅ Swagger/OpenAPI documentation
 
+##  Live Demo
+
+| Resource | URL |
+|----------|-----|
+| **Deployed API** | [https://github-repo-searcher-xing.onrender.com/api/github/repositories](https://github-repo-searcher-xing.onrender.com/api/github/repositories) |
+| **Swagger UI** | [https://github-repo-searcher-xing.onrender.com/swagger-ui/index.html](https://github-repo-searcher-xing.onrender.com/swagger-ui/index.html) |
+| **OpenAPI JSON** | [https://github-repo-searcher-xing.onrender.com/v3/api-docs](https://github-repo-searcher-xing.onrender.com/v3/api-docs) |
+| **GitHub Repository** | [https://github.com/saatvik1512/github-repo-searcher](https://github.com/saatvik1512/github-repo-searcher) |
+
+>  **Note:** Hosted on Render Free Tier. First request after inactivity may take 30–60 seconds due to cold start.
+
 ##  Tech Stack
 
 ### Core
@@ -140,9 +151,6 @@ Retrieve stored repos with optional filters.
 ```
 GET /api/github/repositories?language=Java&minStars=100&sort=forks
 ```
-
- **Interactive API Docs (Swagger UI):** [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
- **OpenAPI JSON:** [http://localhost:8080/v3/api-docs](http://localhost:8080/v3/api-docs)
 
 ##  Testing
 
