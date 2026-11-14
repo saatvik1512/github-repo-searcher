@@ -53,7 +53,7 @@ class GitHubDataServiceTest {
     void shouldUpdateExistingEntityWhenGithubIdMatches() {
         // Arrange
         GithubEntity existing = new GithubEntity();
-        existing.setId(1L); // DB ID set karo (important!)
+        existing.setId(1L); 
         existing.setGithubId(888L);
         existing.setStars(100);
         existing.setName("old-name");

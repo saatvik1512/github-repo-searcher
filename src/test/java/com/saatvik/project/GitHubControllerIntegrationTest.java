@@ -91,12 +91,11 @@ class GitHubControllerIntegrationTest {
 
     @Test
     void shouldRetrieveWithFilters() {
-        // Pehle data save karo
         SearchRequest searchReq = new SearchRequest();
         searchReq.setQuery("test");
         restTemplate.postForEntity("/api/github/search", searchReq, Map.class);
 
-        // Ab filter karke retrieve karo
+        
         ResponseEntity<Map> response = restTemplate.getForEntity(
             "/api/github/repositories?language=Java&minStars=50&sort=stars", 
             Map.class);
